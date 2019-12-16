@@ -7,12 +7,13 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
   <%= link_to "Home", '#'%>
-  <%= link_to "About Us", '#'%>
-  <%= link_to "Contact Us",'#'%>
+  <%= link_to "About Us", '/static_pages/about'%>
+  <%= link_to "Contact Us",'/static_pages/contact'%>
   
   <div class="container">
   <%= yield %>
