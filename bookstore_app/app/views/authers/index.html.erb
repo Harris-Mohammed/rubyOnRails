@@ -1,0 +1,18 @@
+<div class="container">
+<h2> Auther Details </h2>
+<table border="1" class="table">
+<tr>
+<th> auther fname</th>
+<th> auther iname</th>
+<th> auther bio</th>
+</tr>
+<% @authers.each do |auther| %>
+<tr>
+<td> <%= auther.fname %> </td>
+<td> <%= auther.iname %> </td>
+<td> <%= auther.bio %> </td>
+</tr>
+ 
+<% end %>
+</table>
+</div>
